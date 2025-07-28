@@ -645,8 +645,8 @@ ul {
 
 /* --- Footer --- */
 .main-footer {
-    background-color: #f5f5f5;
-    color: #444;
+    background-color: #cc3523; /* Changed footer background to brand primary color */
+    color: #fff; /* Changed footer text color to white */
     padding: 40px 20px;
     margin-top: 50px;
     display: flex;
@@ -660,6 +660,35 @@ ul {
 .footer-links {
     flex: none;
     margin-bottom: 10px;
+    color: #fff; /* Changed footer links text color to white */
+}
+
+.footer-links a {
+    color: #fff; /* Changed footer links anchor text color to white */
+}
+
+.footer-logos {
+    flex: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.footer-logo:hover {
+    filter: brightness(0.8) invert(0.8);
+}
+
+.main-footer p {
+    color: #fff; /* Changed footer paragraph text color to white */
 }
 
 .footer-logos {
