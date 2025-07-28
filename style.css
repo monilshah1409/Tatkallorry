@@ -754,6 +754,27 @@ ul {
     }
 }
 
+/* Floating call button - visible on all screen sizes */
+.floating-call-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 2.5em;
+    padding: 15px 18px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    text-decoration: none;
+    z-index: 10000;
+    transition: background-color 0.3s ease;
+}
+
+.floating-call-btn:hover {
+    background-color: #a82b1d;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .nav-links {
