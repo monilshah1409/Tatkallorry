@@ -47,7 +47,7 @@ export default function Header() {
                         <Link
                             key={name}
                             href={href}
-                            className="text-secondary font-semibold hover:text-primary transition-colors relative group text-sm uppercase tracking-wide"
+                            className="text-secondary font-semibold hover:text-primary transition-colors relative group text-base uppercase tracking-wide"
                         >
                             {name}
                             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
@@ -55,7 +55,7 @@ export default function Header() {
                     ))}
                     <Link
                         href="/get-quote"
-                        className="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-0.5 shadow-lg shadow-red-200 text-sm"
+                        className="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-0.5 shadow-lg shadow-red-200 text-base"
                     >
                         Get Quote
                     </Link>
