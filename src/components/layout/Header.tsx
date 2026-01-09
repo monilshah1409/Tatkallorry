@@ -20,11 +20,11 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md py-2" : "bg-white py-4"
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md py-1" : "bg-white py-2"
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link href="/" className="relative h-24 w-60 block">
+                <Link href="/" className="relative h-12 w-60 block">
                     <Image
                         src="/logo.png"
                         alt="Tatkalorry Logo"
