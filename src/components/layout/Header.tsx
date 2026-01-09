@@ -20,8 +20,9 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md py-1" : "bg-white py-2"
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "shadow-md py-1" : "py-2"
                 }`}
+            style={{ backgroundColor: "#ffffff" }}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link href="/" className="relative h-12 w-60 block">
