@@ -7,13 +7,13 @@ export default function ProblemSolution() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
                     {/* Problem Side */}
-                    <div className="bg-red-50 p-10 rounded-3xl border border-red-100">
+                    <div className="bg-red-50 p-6 md:p-10 rounded-3xl border border-red-100">
                         <Reveal>
                             <h3 className="text-2xl font-bold font-heading text-red-800 mb-6 flex items-center gap-3">
                                 <XCircle className="text-red-600" />
                                 The Industry Struggle
                             </h3>
-                            <ul className="space-y-4">
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                                 {[
                                     "Consignment delivery limitations",
                                     "Irregular dispatching from manufacturing units",
@@ -44,7 +44,7 @@ export default function ProblemSolution() {
                                 A team of ceramic industry veterans developed <span className="font-bold text-primary">Tatkalorry</span> to solve these exact headaches. We connect manufacturers, dealers, and transporters on a single tech-enabled platform.
                             </p>
 
-                            <div className="space-y-4">
+                            <div className="flex flex-col sm:flex-row gap-4 sm:space-y-0">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 shrink-0">
                                         <CheckCircle size={24} />

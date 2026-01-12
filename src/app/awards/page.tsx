@@ -240,30 +240,30 @@ export default function AwardsPage() {
                             <div className="h-1 w-20 bg-primary mx-auto"></div>
                         </Reveal>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                         {awardsData.map((award, index) => (
                             <Reveal key={award.id} delay={index * 0.1} className="h-full">
                                 <div
                                     className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full relative group"
                                 >
                                     {/* Year Badge */}
-                                    <div className="absolute top-4 left-4 z-10 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full shadow-md">
+                                    <div className="absolute top-2 left-2 md:top-4 md:left-4 z-10 bg-primary text-white text-xs md:text-sm font-bold px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-md">
                                         {award.year}
                                     </div>
 
                                     {/* Image Container */}
-                                    <div className="relative h-64 w-full bg-gray-50 flex items-center justify-center p-4 group-hover:bg-gray-100 transition-colors">
+                                    <div className="relative h-32 md:h-64 w-full bg-gray-50 flex items-center justify-center p-2 md:p-4 group-hover:bg-gray-100 transition-colors">
                                         {award.imageSrc.includes('placeholder') ? (
                                             <div className="text-center text-gray-300 flex flex-col items-center">
                                                 <span className="mb-2 block transform group-hover:scale-110 transition-transform duration-300">
-                                                    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <svg className="w-8 h-8 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                                                     </svg>
                                                 </span>
-                                                <span className="text-sm font-medium">Image Coming Soon</span>
+                                                <span className="text-xs md:text-sm font-medium">Image Coming Soon</span>
                                             </div>
                                         ) : (
-                                            <div className="relative w-full h-full p-4">
+                                            <div className="relative w-full h-full p-2 md:p-4">
                                                 <Image
                                                     src={award.imageSrc}
                                                     alt={award.title}
@@ -275,17 +275,17 @@ export default function AwardsPage() {
                                     </div>
 
                                     {/* Content Container */}
-                                    <div className="p-6 flex-1 flex flex-col border-t border-gray-50">
-                                        <h3 className="text-xl font-bold text-secondary mb-3 font-heading leading-tight group-hover:text-primary transition-colors">
+                                    <div className="p-3 md:p-6 flex-1 flex flex-col border-t border-gray-50">
+                                        <h3 className="text-sm md:text-xl font-bold text-secondary mb-2 md:mb-3 font-heading leading-tight group-hover:text-primary transition-colors line-clamp-2">
                                             {award.title}
                                         </h3>
-                                        <ul className="space-y-3 mt-auto">
+                                        <ul className="space-y-1 md:space-y-3 mt-auto">
                                             {award.description.map((desc, i) => (
-                                                <li key={i} className="flex items-start text-gray-600 text-sm leading-relaxed">
-                                                    <svg className="w-5 h-5 text-primary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <li key={i} className="flex items-start text-gray-600 text-xs md:text-sm leading-relaxed">
+                                                    <svg className="w-3 h-3 md:w-5 md:h-5 text-primary mr-1 md:mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
-                                                    <span>{desc}</span>
+                                                    <span className="line-clamp-3">{desc}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -308,14 +308,14 @@ export default function AwardsPage() {
                         </Reveal>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 snap-x hide-scrollbar">
                         {videosData.map((video, index) => (
                             <Reveal key={video.id} delay={index * 0.1}>
                                 <a
                                     href={video.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="block bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group h-full transform hover:-translate-y-1"
+                                    className="block bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group h-full transform hover:-translate-y-1 min-w-[280px] snap-center"
                                 >
                                     {/* Thumbnail Container */}
                                     <div className="relative aspect-video w-full overflow-hidden bg-gray-900">

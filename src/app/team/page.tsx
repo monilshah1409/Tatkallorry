@@ -23,23 +23,23 @@ export default function Team() {
             <section className="py-20">
                 <div className="container mx-auto px-4">
                     {/* Founders */}
-                    <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto mb-20">
+                    <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-12 max-w-4xl mx-auto mb-20">
                         <Reveal>
                             <div className="text-center group">
-                                <div className="w-48 h-48 mx-auto relative rounded-full overflow-hidden border-4 border-gray-100 shadow-lg group-hover:border-primary transition-colors mb-6">
+                                <div className="w-24 h-24 md:w-48 md:h-48 mx-auto relative rounded-full overflow-hidden border-4 border-gray-100 shadow-lg group-hover:border-primary transition-colors mb-4 md:mb-6">
                                     <Image src="/team-nikita.jpg" alt="Ms. Nikita" fill className="object-cover" />
                                 </div>
-                                <h3 className="text-2xl font-bold font-heading text-secondary">Ms. Nikita</h3>
-                                <p className="text-primary font-bold">Co-Founder</p>
+                                <h3 className="text-lg md:text-2xl font-bold font-heading text-secondary">Ms. Nikita</h3>
+                                <p className="text-primary font-bold text-sm md:text-base">Co-Founder</p>
                             </div>
                         </Reveal>
                         <Reveal delay={0.2}>
                             <div className="text-center group">
-                                <div className="w-48 h-48 mx-auto relative rounded-full overflow-hidden border-4 border-gray-100 shadow-lg group-hover:border-primary transition-colors mb-6">
+                                <div className="w-24 h-24 md:w-48 md:h-48 mx-auto relative rounded-full overflow-hidden border-4 border-gray-100 shadow-lg group-hover:border-primary transition-colors mb-4 md:mb-6">
                                     <Image src="/team-vinod.jpg" alt="Mr. Vinod" fill className="object-cover" />
                                 </div>
-                                <h3 className="text-2xl font-bold font-heading text-secondary">Mr. Vinod</h3>
-                                <p className="text-primary font-bold">Co-Founder</p>
+                                <h3 className="text-lg md:text-2xl font-bold font-heading text-secondary">Mr. Vinod</h3>
+                                <p className="text-primary font-bold text-sm md:text-base">Co-Founder</p>
                             </div>
                         </Reveal>
                     </div>

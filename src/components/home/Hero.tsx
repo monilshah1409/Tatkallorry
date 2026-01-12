@@ -54,7 +54,7 @@ export default function Hero() {
                     </Reveal>
 
                     <Reveal delay={0.4}>
-                        <div className="pt-8 flex gap-8 text-sm text-gray-300 border-t border-white/10 mt-8">
+                        <div className="pt-8 flex gap-4 md:gap-8 text-sm text-gray-300 border-t border-white/10 mt-8 overflow-x-auto">
                             <div>
                                 <span className="block text-2xl font-bold text-white">500+</span>
                                 <span>daily Trips</span>

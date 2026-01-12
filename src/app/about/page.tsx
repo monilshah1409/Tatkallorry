@@ -53,16 +53,16 @@ export default function About() {
                         </Reveal>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-12 max-w-5xl mx-auto">
                         {/* Founder 1 */}
                         <Reveal>
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-                                <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden border-4 border-primary">
+                            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center h-full">
+                                <div className="w-24 h-24 md:w-40 md:h-40 relative mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary">
                                     <Image src="/team-nikita.jpg" alt="Ms. Nikita" fill className="object-cover" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-secondary">Ms. Nikita</h3>
-                                <p className="text-primary font-bold mb-4">Co-Founder</p>
-                                <p className="text-gray-600">
+                                <h3 className="text-lg md:text-2xl font-bold text-secondary">Ms. Nikita</h3>
+                                <p className="text-primary text-sm md:text-base font-bold mb-2 md:mb-4">Co-Founder</p>
+                                <p className="text-xs md:text-base text-gray-600 leading-relaxed">
                                     With a passion for business management, Ms. Nikita ventured into logistics to remedy industry loopholes. She visioned Tatkalorry to be the platform that overcomes these challenges through innovation.
                                 </p>
                             </div>
@@ -70,13 +70,13 @@ export default function About() {
 
                         {/* Founder 2 */}
                         <Reveal delay={0.2}>
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-                                <div className="w-40 h-40 relative mb-6 rounded-full overflow-hidden border-4 border-primary">
+                            <div className="bg-white p-4 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center h-full">
+                                <div className="w-24 h-24 md:w-40 md:h-40 relative mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary">
                                     <Image src="/team-vinod.jpg" alt="Mr. Vinod" fill className="object-cover" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-secondary">Mr. Vinod</h3>
-                                <p className="text-primary font-bold mb-4">Co-Founder</p>
-                                <p className="text-gray-600">
+                                <h3 className="text-lg md:text-2xl font-bold text-secondary">Mr. Vinod</h3>
+                                <p className="text-primary text-sm md:text-base font-bold mb-2 md:mb-4">Co-Founder</p>
+                                <p className="text-xs md:text-base text-gray-600 leading-relaxed">
                                     A veteran with 15+ years in the ceramic and transport industry. He co-founded Tatkalorry to ensure logistics is never an obstacle for business, bringing efficient systems to stakeholders.
                                 </p>
                             </div>

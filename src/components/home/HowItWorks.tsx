@@ -48,18 +48,18 @@ export default function HowItWorks() {
                     </Reveal>
                 </div>
 
-                <div className="grid md:grid-cols-5 gap-4 relative">
+                <div className="flex md:grid md:grid-cols-5 gap-4 relative overflow-x-auto pb-8 snap-x md:pb-0 hide-scrollbar">
                     {/* Connecting Line (Desktop) */}
                     <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-white/20 -z-10" />
 
                     {steps.map((step, i) => (
                         <Reveal key={i} delay={i * 0.1}>
-                            <div className="flex flex-col items-center text-center">
-                                <div className="w-24 h-24 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-accent mb-6 shadow-lg shadow-black/20">
-                                    <step.icon size={32} />
+                            <div className="flex flex-col items-center text-center min-w-[200px] snap-center">
+                                <div className="w-16 h-16 md:w-24 md:h-24 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-accent mb-4 md:mb-6 shadow-lg shadow-black/20">
+                                    <step.icon size={24} className="md:w-8 md:h-8" />
                                 </div>
-                                <h3 className="text-lg font-bold font-heading mb-3">{step.title}</h3>
-                                <p className="text-sm text-gray-300 leading-relaxed max-w-[200px]">
+                                <h3 className="text-base md:text-lg font-bold font-heading mb-2 md:mb-3">{step.title}</h3>
+                                <p className="text-xs md:text-sm text-gray-300 leading-relaxed max-w-[200px]">
                                     {step.desc}
                                 </p>
                             </div>

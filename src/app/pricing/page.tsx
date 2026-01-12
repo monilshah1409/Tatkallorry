@@ -34,12 +34,12 @@ export default function Pricing() {
                             We currently provide comprehensive <strong>Pan Gujarat</strong> delivery services. Our network connects major industrial hubs to ensure your ceramic goods reach their market.
                         </p>
 
-                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <div className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-200">
                             <h3 className="font-bold text-xl mb-4 text-secondary">Key Hubs & Offices</h3>
-                            <ul className="space-y-3">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                 {["Ahmedabad", "Surat", "Morbi (Headquarters)", "Rajkot", "Vadodara", "Gandhidham"].map((city) => (
-                                    <li key={city} className="flex items-center gap-3 text-gray-700">
-                                        <CheckCircle size={20} className="text-green-500" />
+                                    <li key={city} className="flex items-center gap-2 text-sm md:text-base text-gray-700">
+                                        <CheckCircle size={16} className="text-green-500 shrink-0" />
                                         {city}
                                     </li>
                                 ))}

@@ -47,15 +47,15 @@ export default function Features() {
                     </Reveal>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {features.map((feature, i) => (
                         <Reveal key={i} delay={i * 0.1}>
-                            <div className="p-8 h-full rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:border-red-100 hover:shadow-xl transition-all duration-300 group">
-                                <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                                    <feature.icon size={28} />
+                            <div className="p-4 md:p-8 h-full rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:border-red-100 hover:shadow-xl transition-all duration-300 group">
+                                <div className="w-10 h-10 md:w-14 md:h-14 bg-red-50 rounded-xl flex items-center justify-center text-primary mb-3 md:mb-6 group-hover:scale-110 transition-transform">
+                                    <feature.icon size={20} className="md:w-7 md:h-7" />
                                 </div>
-                                <h3 className="text-xl font-bold font-heading text-secondary mb-3">{feature.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
+                                <h3 className="text-sm md:text-xl font-bold font-heading text-secondary mb-2 md:mb-3">{feature.title}</h3>
+                                <p className="text-xs md:text-base text-gray-600 leading-relaxed">{feature.desc}</p>
                             </div>
                         </Reveal>
                     ))}
