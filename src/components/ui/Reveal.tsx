@@ -6,11 +6,13 @@ import { useEffect, useRef } from "react";
 export default function Reveal({
     children,
     width = "100%",
-    delay = 0.25
+    delay = 0.25,
+    className = ""
 }: {
     children: React.ReactNode;
     width?: "fit-content" | "100%";
     delay?: number;
+    className?: string;
 }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -23,7 +25,7 @@ export default function Reveal({
     }, [isInView, mainControls]);
 
     return (
-        <div ref={ref} style={{ position: "relative", width }}>
+        <div ref={ref} style={{ position: "relative", width }} className={className}>
             <motion.div
                 variants={{
                     hidden: { opacity: 0, y: 20 },
@@ -32,6 +34,7 @@ export default function Reveal({
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5, delay }}
+                className="h-full"
             >
                 {children}
             </motion.div>

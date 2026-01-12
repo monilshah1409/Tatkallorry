@@ -25,9 +25,9 @@ export default function Header() {
             style={{ backgroundColor: "#ffffff" }}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link href="/" className="relative h-12 w-60 block">
+                <Link href="/" className="relative h-24 w-24 block">
                     <Image
-                        src="/logo.png"
+                        src="/logo-wb.png"
                         alt="Tatkalorry Logo"
                         fill
                         className="object-contain object-left"
@@ -40,6 +40,7 @@ export default function Header() {
                     {[
                         ["Home", "/"],
                         ["About", "/about"],
+                        ["Awards", "/awards"],
                         ["Services", "/services"],
                         ["Pricing", "/pricing"],
                         ["Team", "/team"],
@@ -85,6 +86,7 @@ export default function Header() {
                             {[
                                 ["Home", "/"],
                                 ["About", "/about"],
+                                ["Awards", "/awards"],
                                 ["Services", "/services"],
                                 ["Pricing", "/pricing"],
                                 ["Team", "/team"],

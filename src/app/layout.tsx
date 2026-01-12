@@ -20,6 +20,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Tatkalorry | Redefining Logistics in the Ceramic Industry",
   description: "Tech-enabled logistics platform connecting manufacturers and transporters for efficient ceramic goods delivery.",
+  icons: {
+    icon: '/logo-wb.png',
+  },
 };
 
 const localBusinessSchema = {
