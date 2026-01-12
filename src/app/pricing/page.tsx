@@ -37,7 +37,7 @@ export default function Pricing() {
                         <div className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-200">
                             <h3 className="font-bold text-xl mb-4 text-secondary">Key Hubs & Offices</h3>
                             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                                {["Ahmedabad", "Surat", "Morbi (Headquarters)", "Rajkot", "Vadodara", "Gandhidham"].map((city) => (
+                                {["Ahmedabad", "Surat", "Morbi (Headquarters)", "Rajkot", "Vadodara", "Gandhidham", "Bangalore", "Pune", "Mumbai"].map((city) => (
                                     <li key={city} className="flex items-center gap-2 text-sm md:text-base text-gray-700">
                                         <CheckCircle size={16} className="text-green-500 shrink-0" />
                                         {city}
