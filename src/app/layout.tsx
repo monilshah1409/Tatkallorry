@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat, Open_Sans } from "next/font/google";
+// import { Montserrat, Open_Sans } from "next/font/google"; // Disabled due to build network issues
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
 import "./globals.css";
 
+/*
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -16,6 +17,7 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
   display: "swap",
 });
+*/
 
 export const metadata: Metadata = {
   title: "Tatkalorry | Redefining Logistics in the Ceramic Industry",
@@ -48,8 +50,6 @@ const localBusinessSchema = {
 
 import FloatingCallBtn from "@/components/ui/FloatingCallBtn";
 
-// ... existing imports
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${openSans.variable} antialiased font-body bg-white text-secondary`}
+        className={`antialiased font-body bg-white text-secondary`}
       >
         <JsonLd data={localBusinessSchema} />
         <Header />
